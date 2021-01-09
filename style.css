@@ -1,0 +1,13 @@
+* {
+    font-family: "IBM Plex Mono", monospace;
+}
+
+body {
+    background: #212121;
+    color: white;
+}
+
+a {
+    display: block;
+    color: white;
+}
