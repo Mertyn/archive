@@ -1,0 +1,299 @@
+* {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+}
+
+body {
+  background: #37474f;
+
+  /* Disable Blue glow */
+  -webkit-tap-highlight-color:  rgba(0, 0, 0, 0);
+  /* Disble selection */
+  -moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+a {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+/*
+Styling of all screens
+*/
+
+.screen {
+  transition: opacity 0.2s linear;
+}
+
+/*
+Title screen
+*/
+#title {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  text-align: center;
+  /*display: none;*/
+}
+
+#logo {
+  transition: all 300ms ease-out;
+}
+
+#title>h1 {
+  font-weight: 100;
+  font-size: 20vh;
+
+  text-shadow: 0px 5px 20px rgba(0,0,0,0.5);
+}
+
+#at {
+  font-size: 10vh;
+}
+
+#green {
+  color: #81c784;
+}
+
+.tap {
+  font-weight: 100;
+  font-size: 5vh;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  text-align: center;
+
+  transition: opacity 0.3s linear;
+}
+
+#menu {
+  display: none;
+  opacity: 0;
+
+  transition: all 200ms linear;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  color: white;
+  background: #607d8b;
+
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 3vh;
+  box-shadow: 0px 5px 20px rgba(0,0,0,0.3);
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+#play {
+  padding: 25px 200px 25px 200px;
+  font-size: 6vh;
+}
+
+#reset {
+  padding: 25px 205px 25px 205px;
+  font-size: 4vh;
+}
+
+#game {
+  margin: 5vh 0;
+  opacity: 0;
+  display: none;
+}
+
+#offline {
+  font-size: 4vh;
+  padding: 25px 200px 25px 200px;
+}
+
+#tap-on-green {
+  margin-top: 20vh;
+}
+
+/*
+Everything in the Top bar
+*/
+
+#top-bar {
+  /*background: #273339;*/
+}
+
+#score {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+
+  color: white;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  transition: all 0.1s linear;
+}
+
+#high-score {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+
+  color: white;
+  text-align: center;
+  margin-top: 0;
+
+  line-height: 32px;
+}
+
+#new-high-one {
+  display: none;
+}
+
+#new-high-two {
+  display: none;
+}
+
+/*
+Everything in the playfield
+*/
+
+/*
+Layout for desktop
+*/
+
+@media (min-device-width: 999px) {
+  #top-bar {
+    margin-top: 0;
+  }
+
+  #score {
+    font-size: 10vh;
+  }
+
+  #high-score {
+    font-size: 2.5vw;
+  }
+
+  #playfield {
+    display: inline-block;
+    margin: 10vh auto 0 14vw;
+  }
+
+  .box{
+    position: relative;
+    display: inline-block;
+    margin: 15px 2vw 15px 2vw;
+    width: 10vw;		/* desired width */
+  }
+
+  .box:before{
+    content: "";
+    display: block;
+    padding-top: 100%; 	/* initial ratio of 1:1*/
+  }
+
+  .round {
+    border-radius: 100%;
+
+    transition: all 250ms ease-in-out;
+
+    position:  absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+/*
+Layout for mobile
+*/
+
+@media (max-device-width: 998px) {
+  #score {
+    font-size: 10vh;
+  }
+
+  #high-score {
+    font-size: 5vw;
+  }
+
+  #playfield {
+    display: inline-block;
+    margin: 10vh auto 0 auto;
+  }
+
+  .box{
+    position: relative;
+    display: inline-block;
+    margin: 15px 1vw 15px 3vw;
+    width: 15vw;		/* desired width */
+  }
+
+  .box:before{
+    content: "";
+    display: block;
+    padding-top: 100%; 	/* initial ratio of 1:1*/
+  }
+
+  .round {
+    border-radius: 100%;
+
+    transition: all 250ms ease-in-out;
+
+    position:  absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+@media (orientation: landscape) {
+  #high-score {
+    font-size: 4vh;
+  }
+}
+
+.round {
+  -webkit-box-shadow: 0px 5px 20px -5px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 5px 20px -5px rgba(0,0,0,0.75);
+  box-shadow: 0px 5px 20px -5px rgba(0,0,0,0.75);
+}
+
+.grown {
+  transform: scale(1.3) !important;
+
+  -webkit-box-shadow: 0px 7px 45px -10px rgba(0,0,0,0.6);
+  -moz-box-shadow: 0px 7px 45px -10px rgba(0,0,0,0.6);
+  box-shadow: 0px 7px 45px -10px rgba(0,0,0,0.6);
+}
+
+.green {
+  background: #81c784;
+}
+
+.yellow {
+  background: #fff176;
+}
+
+.red {
+  background: #e57373;
+}

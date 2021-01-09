@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Windowball</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/png" href="favicon.png" />
+  </head>
+  <body>
+    <div>
+      <h1>Windowball</h1>
+
+      <button onclick="spawn()">
+        <span>N</span> <br />
+        Spawn
+      </button>
+
+      <button onclick="killOne()">
+        <span>Q</span> <br />
+        Kill Current
+      </button>
+
+      <button onclick="killAll()">
+        <span>Shift+Q</span> <br />
+        Kill All
+      </button>
+    </div>
+
+    <script src="./js/randomColor.js" charset="utf-8"></script>
+    <script src="./js/windowball.js" charset="utf-8"></script>
+  </body>
+</html>

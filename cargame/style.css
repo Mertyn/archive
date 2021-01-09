@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  background: #212121;
+  overflow: hidden;
+}
+
+canvas {
+  margin: auto;
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+}

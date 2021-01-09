@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Random Image Generator</title>
+		<meta charset="utf-8">
+		<meta name="theme-color" content="black">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link type="text/css" rel="stylesheet" href="assets/css/style.css"/>
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+		<script type="text/javascript" src="assets/js/randomColor.js"></script>
+	</head>
+	<body>
+		<div id="menu-bar">
+			<button onclick="generate()" class="icon"> <i class="material-icons">refresh</i> </button>
+
+			<form>
+				<p>Circles:</p>
+				<input id="circles" type="checkbox" name="shapes" value="circles" checked/>
+				<p>Squares:</p>
+				<input id="squares" type="checkbox" name="shapes" value="squares" checked/>
+			</form>
+		</div>
+
+		<div id="main">
+			<canvas width="1000" height="600" id="canvas"></canvas>
+		</div>
+
+		<script type="text/javascript" src="assets/js/main.js"></script>
+	</body>
+</html>

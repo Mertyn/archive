@@ -1,0 +1,13 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background: black;
+}
+
+canvas {
+  background: #212121;
+  image-rendering: pixelated;
+  display: block;
+  margin: 100px auto;
+  width: 750px;
+}

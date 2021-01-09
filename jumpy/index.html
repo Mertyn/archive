@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
+    <meta name="theme-color" content="#000000">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+
+    <title>Jumpy ALPHA v0.1.5</title>
+
+  </head>
+  <body onload="init()">
+
+    <script type="text/javascript" src="./js/phaser.min.js"></script>
+    <script type="text/javascript" src="./js/states/boot.js"></script>
+    <script type="text/javascript" src="./js/levelmanager.js"></script>
+    <script type="text/javascript" src="./js/stats.js"></script>
+    <script type="text/javascript" src="./js/states/main.js"></script>
+    <script type="text/javascript" src="./js/levelfunctions.js"></script>
+    <script type="text/javascript" src="./js/states/cutscenes.js"></script>
+    <script type="text/javascript" src="./js/objects/map.js"></script>
+    <script type="text/javascript" src="./js/objects/player.js"></script>
+    <script type="text/javascript" src="./js/objects/rat.js"></script>
+    <script type="text/javascript" src="./js/objects/squirrel.js"></script>
+
+    <div id="topBar">
+      <button onclick="game.goFull()" class="mobile"><i class="material-icons" style="font-size:24px;">fullscreen</i></button>
+      <button onclick="lastCheck()" class="mobile"><i class="material-icons" style="font-size:24px;">skip_previous</i></button>
+      <button onclick="restart()" class="mobile"><i class="material-icons" style="font-size:24px;">refresh</i></button>
+    </div>
+
+  </body>
+</html>

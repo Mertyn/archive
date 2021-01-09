@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
+
+    <!-- Title and favicon -->
+    <title>Space Duel</title>
+    <link rel="icon" type="image/png" href="http://dasmaennel.github.io/games/SpaceDuel/assets/img/GUI/favicon.png">
+
+    <style>
+      @font-face {
+        font-family: visitor;
+        font-style: normal;
+        font-weight: 400;
+        src: url(assets/font/visitor.ttf) format('truetype');
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        background: #000;
+      }
+      canvas {
+        height: 100vh;
+        margin: auto;
+        /*image-rendering: pixelated;
+        image-rendering: -moz-crisp-edges;*/
+      }
+      p {
+        color: white;
+        font-family: sans-serif;
+        padding: 10px;
+        margin: 0;
+        background: #212121;
+      }
+      a {
+        color: grey;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      #close {
+        float: right;
+      }
+    </style>
+
+  </head>
+  <body>
+    <p>Running slow? <a href="../spaceduel-lr">Try SpaceDuel LR</a><a href="javascript:document.getElementsByTagName('p')[0].remove()" id="close">Close</a></p>
+    <script type="text/javascript" src="assets/js/phaser.min.js"></script>
+    <script type="text/javascript" src="assets/js/fontfaceobserver.standalone.js"></script>
+    <script type="text/javascript" src="assets/js/menu.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+  </body>
+</html>

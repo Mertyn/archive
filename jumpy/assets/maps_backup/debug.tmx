@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="32" height="7" tilewidth="16" tileheight="16" nextobjectid="1">
+ <tileset firstgid="1" name="tileset_underground" tilewidth="16" tileheight="16" tilecount="16" columns="4">
+  <image source="../tileset_underground.png" width="64" height="64"/>
+ </tileset>
+ <layer name="Kachelebene 1" width="32" height="7" offsetx="6.5" offsety="19">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,10,0,0,0,0,0,0,0,0,0,0,0,10,0,0,0,0,0,0,0,0,0,0,0,
+0,0,1,0,0,0,0,8,6,9,0,0,0,0,0,0,0,0,4,8,6,9,0,0,0,0,0,0,0,2,0,0,
+7,7,7,7,7,7,7,6,6,6,7,7,7,7,7,7,7,7,7,6,6,6,7,9,5,5,8,7,7,7,7,7,
+6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6
+</data>
+ </layer>
+</map>

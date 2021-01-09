@@ -1,0 +1,30 @@
+Features I want list:
+- Enemies
+- Collapsing floating bricks
+- 3 Cutscenes:
+  * Intro
+  * Transition to overworld
+  * Ending
+- At least 6 levels
+
+TODO list:
+DONE - Build first level
+DONE - Explode animation on spikes
+DONE - Improve levelmanager (map scripts etc.)
+DONE - Finalize level 2
+DONE - Build transition cutscene to overworld
+- Implement collaping bricks
+- Make sound and music
+
+BUG list ლ(ಠ益ಠლ):
+FIXED - Player gets reset multiple times, when colliding with an enemy
+FIXED - Player and other sprites vibrate sometimes on tilemap collision
+FIXED - Player sometimes still moves when reset
+FIXED - Checkpoint system not working properly
+FIXED- Touch jump doesn't jump
+- Player idle animation breaks after first time playing
+- Gamepad doesn't werk
+
+Cherry on top list:
+DONE - Player idle animation
+- Rat lighting fix

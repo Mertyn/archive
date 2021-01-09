@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  /*background: #bebbb6;*/
+  background: black;
+  overflow: hidden;
+}
+
+canvas {
+  /*height: 100vh;*/
+  margin: auto;
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  /*border-top: 1px grey solid;
+  border-bottom: 1px grey solid;*/
+  /*transform: rotate(90deg);*/
+}
+
+button {
+  display: inline-block;
+  background: black;
+  color: grey;
+  border: 1px solid grey;
+  font-size: 3vh;
+  padding: 10px 10px 5px;
+  margin: 15px 5px 15px 5px;
+  cursor: pointer;
+}
+
+.mobile {
+  display: none;
+}
+
+button:focus {
+  outline: none;
+  color: lightgrey;
+  border: 1px solid lightgrey;
+}
+
+#topBar {
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+}
+
+@media (max-width: 1080px) {
+  .mobile {
+    display: inline-block;
+  }
+}

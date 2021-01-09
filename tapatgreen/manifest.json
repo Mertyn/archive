@@ -1,0 +1,21 @@
+{
+  "name": "Tap at Green",
+  "short_name": "Tap At Green",
+  "icons": [{
+      "src": "assets/img/icon_144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    }, {
+      "src": "assets/img/icon_192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }, {
+      "src": "assets/img/icon_512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }],
+  "start_url": "/games/TapAtGreen/index.html",
+  "display": "standalone",
+  "background_color": "#37474f",
+  "theme_color": "#263238"
+}
