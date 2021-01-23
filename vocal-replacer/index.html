@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vocal replacer</title>
+
+	<!-- Stylesheet -->
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+
+	<!-- Meta tags -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="theme-color" content="#35363a">
+</head>
+<body>
+	<div id="header">
+		<label for="selector">Replace all vocals with:</label>
+
+		<select id="selector">
+			<option value="a">a</option>
+			<option value="e">e</option>
+			<option value="i">i</option>
+			<option value="o">o</option>
+			<option value="u">u</option>
+			<option value="ä">ä</option>
+			<option value="ö">ö</option>
+			<option value="ü">ü</option>
+		</select>
+		
+		<button id="replace">Replace</button>
+	</div>
+
+	<textarea id="input" placeholder="Input some text..." ></textarea>
+	<span id="clear" onselectstart="return false;" unselectable="off">Clear</span>
+	
+	<script type="text/javascript" src="assets/main.js"></script>
+	<script type="text/javascript" src="http://localhost:35729/livereload.js?snipver=1"></script>
+</body>
+</html>
