@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Metas -->
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+  <meta name="theme-color" content="#1e88e5">
+  <link rel="icon" type="image/png" href="../media/img/favicon.png">
+
+  <!-- SEO -->
+  <meta name="description" content="HIER IST DER INHALT MEINER META DESCRIPTION" />
+  <meta name="keywords" content="KEYWORD 1, KEYWORD 2, KEYWORD 3" />
+  
+  <title>Step</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="../css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="../css/format.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <nav class="light-blue darken-1">
+      <div class="nav-wrapper container">
+        <div id="title" class="brand-logo white-text">
+          STEP
+        </div>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      </div>
+    </nav>
+
+    <div class="progress blue lighten-3">
+      <div class="indeterminate blue"></div>
+    </div>
+
+    <!-- Container for loading content -->
+    <div class="section no-pad-bot flow-text" id="index-banner">
+      <div class="container browser-default" id="view">
+      </div>
+    </div>
+
+    <div class="section no-pad-bot hidden" id="error-view">
+      <div class="container browser-default">
+        <h1>Error</h1>
+        <h4>Either the internet connection is lost or the page doesn't exist.</h4>
+
+        <a class="waves-effect waves-light btn blue lighten-1 white-text" onclick="location.reload()"><i class="material-icons left">refresh</i>Reload page</a>
+        <a class="waves-effect waves-light btn blue lighten-1 white-text" href=""><i class="material-icons left">home</i>Go home</a>
+        <a class="waves-effect waves-light btn blue lighten-1 white-text" onclick="cm.back()"><i class="material-icons left">keyboard_arrow_left</i>Last page</a>
+      </div>
+    </div>
+
+    <!-- Floating action button -->
+    <div id="lang" class="fixed-action-btn">
+      <a class="btn-floating btn-large red">
+        <i class="large material-icons">language</i>
+      </a>
+      <ul>
+        <li><a class="btn-floating red"onclick="cm.switchLang('de')">DE</a></li>
+        <li><a class="btn-floating blue">EN</a></li>
+      </ul>
+    </div>
+
+    <div class="tap-target blue white-text" data-target="lang">
+      <div class="tap-target-content">
+        <h5>Not german?</h5>
+        <p>Change to english here</p>
+      </div>
+    </div>
+
+    <!-- Modal Structure -->
+    <div id="imprint" class="modal modal-fixed-footer">
+      <div class="modal-content">
+        <div class="row">
+
+          <div class="col s12"><h5>Contact</h5></div>
+
+          <div class="col s12 m6">
+            <h6>Address</h6>
+            <p>
+              STEP Sensortechnik und Elektronik Pockau GmbH <br>
+              Siedlungsstraße 5-7 <br>
+              D-09509 Pockau
+            </p>
+            <a class="btn light-blue lighten-1 waves-effect" target="_blank" href="https://goo.gl/maps/uNv7eQ3dfSB2">
+              <i class="material-icons left">location_on</i>
+              Navigate
+            </a>
+          </div>
+
+          <div class="col s12 m6">
+            <br>
+            <h6>Phone:</h6>
+            <p>(+49) 3 73 67 / 97 91 und 97 92</p>
+            <h6>Telefax:</h6>
+            <p>(+49) 3 73 67 / 77 730</p>
+            <h6>E-Mail:</h6>
+            <a href="mailto:info@step-sensor.de">info@step-sensor.de</a>
+          </div>
+
+        </div>
+
+        <div class="row">
+          <div class="col s12"><h5>Imprint</h5></div>
+          <div class="col s12 m6">
+            <h6>Register of companies</h6>
+            <p>District Court Chemnitz HRB 8966</p>
+            <h6>Ust. Id. No.: DE159290110</h6>
+            <h6>Management director: <a href="mailto:w.schueler@step-sensor.de">Dr. Werner Schüler</a></h6>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="divider"></div>
+          <div class="col s12">
+            <h5>Dislaimer</h5>
+            <p>Despite of accurate content control we are not responsible for contents of external links. Only the licencees of linked pages are responsible for their content.</p>
+          </div>
+          <div class="col s12">
+            <h5>Copyright disclaimer</h5>
+            <p>Used texts, pictures and graphics as well as the website's layout have a worlwide copyright. Without licenced permission reproduction and disemination of single contents or complete pages are forbidden. This even applies for illegal integration of single contents or complete pages in other licencee's pages. But to link this homepage is expressly consented.</p>
+          </div>
+        </div>
+      </div>  <!-- Modal content -->
+
+      <div class="modal-footer">
+        <button class="modal-action modal-close btn-flat waves-effect waves-dark">Close</button>
+      </div>
+    </div>
+
+    <!-- Data security -->
+    <!-- Modal Structure -->
+    <div id="data" class="modal modal-fixed-footer">
+      <div class="modal-content">
+        <div class="row">
+
+          <div class="col s12"><h5>Privacy Policy</h5></div>
+
+          <div class="col s12 m12 center">
+            <i class="material-icons" style="display: block; margin: 50px 0 10px 0; font-size: 50px;">lock</i>
+            <h5 style="margin-bottom: 25px;">Read our Privacy Policy</h5>
+            <a class="btn light-blue lighten-1 waves-effect" target="_blank" href="../media/pdf/STEP-DSE, Datenschutzerklärung der Firma STEP GmbH.pdf">
+              <i class="material-icons left">chrome_reader_mode</i>
+              Read
+            </a>
+          </div>
+
+        </div>
+      </div>  <!-- Modal content -->
+
+      <div class="modal-footer">
+        <button class="modal-action modal-close btn-flat waves-effect waves-dark">Close</button>
+      </div>
+    </div>
+
+    <!-- Certification -->
+    <!-- Modal Structure -->
+    <div id="cert" class="modal modal-fixed-footer">
+      <div class="modal-content">
+        <div class="row">
+
+          <div class="col s12 center">
+            <h5>We are ISO 9001:2015 certified</h5>
+          </div>
+          
+          <div class="col s12 center">
+            <img src="../media/img/TUEV_Sued_logo.png" class="responsive-img">
+          </div>
+
+          <div class="col s12 center">
+            <a class="btn light-blue lighten-1 waves-effect" target="_blank" href="../media/pdf/STEP GmbH Certificate ISO 9001-2015.pdf">
+              <i class="material-icons left">file_download</i>
+              Download certificate
+            </a>
+          </div>
+
+        </div>
+      </div>  <!-- Modal content -->
+
+      <div class="modal-footer">
+        <button class="modal-action modal-close btn-flat waves-effect waves-dark">Close</button>
+      </div>
+    </div>
+
+    <footer class="page-footer light-blue">
+      <div class="container">
+        <div class="row">
+          <div class="col s12">
+            
+            <a id="print" class="btn-flat white-text waves-effect waves-light" href="">
+              <i class="material-icons left">print</i>
+              Print page
+            </a>
+            <a class="btn-flat modal-trigger white-text waves-effect" href="#imprint">
+              <i class="material-icons left">people</i>
+              Imprint
+            </a>
+            <a class="btn-flat modal-trigger white-text waves-effect" href="#data">
+              <i class="material-icons left">lock</i>
+              Privacy Policy
+            </a>
+            <a class="btn-flat modal-trigger white-text waves-effect" href="#cert">
+              <i class="material-icons left">insert_drive_file</i>
+              Tüv certificate
+            </a>
+            <a id="back-to-top" class="white-text btn-flat waves-effect waves-light" href="">
+              <i class="material-icons left">keyboard_arrow_up</i>
+              Back to top
+            </a>
+
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-copyright">
+        <div class="container">
+        &copy; 2019 STEP GmbH &nbsp; <a class="white-text text-lighten-3" href="http://dasmaennel.github.io" target="_blank">Designed by Martin Weber</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Sidenav -->
+  <ul id="nav-mobile" class="sidenav sidenav-fixed">
+    <li>
+      <div id="logo"></div>
+    </li>
+    <li class="divider"></li>
+
+    <li><a href="#" id="home-btn">Home</a></li>
+
+    <li class="no-padding">
+      <ul class="collapsible collapsible-accordion">
+        <li>
+          <a class="collapsible-header">Company<i class="material-icons left">keyboard_arrow_down</i></a>
+          <div class="collapsible-body">
+            <ul>
+              <li><a href="#/unternehmen/firma">History</a></li>
+              <li class="divider"></li>
+              <li><a href="#/unternehmen/referenzen">References</a></li>
+              <li><a href="#/unternehmen/leistungsprofil">Services</a></li>
+              <li class="divider"></li>
+            </ul>
+          </div>
+        </li>
+
+        <li>
+          <a class="collapsible-header">Radiation Measurement<i class="material-icons left">keyboard_arrow_down</i></a>
+          <div class="collapsible-body">
+            <ul>
+              <li><a href="#/strahlenmesstechnik/dosisleistungsmesssysteme">Radiation monitoring systems</a></li>
+              <li><a href="#/strahlenmesstechnik/taschenradiometer">Pocket Survey Meters</a></li>
+              <li><a href="#/strahlenmesstechnik/ortsdosimeter">Survey Meters</a></li>
+              <li><a href="#/strahlenmesstechnik/personendosimeter">Personal Dosimeters</a></li>
+              <li><a href="#/strahlenmesstechnik/spezialmesstechnik">Special Applications</a></li>
+              <li class="divider"></li>
+            </ul>
+          </div>
+        </li>
+
+        <li>
+          <a class="collapsible-header">Enviromental Measurement<i class="material-icons left">keyboard_arrow_down</i></a>
+          <div class="collapsible-body">
+            <ul>
+              <li><a href="#/umweltmesstechnik/substanzen">Substances</a></li>
+              <li><a href="#/umweltmesstechnik/ims">STEP IMS</a></li>
+              <li><a href="#/umweltmesstechnik/pid">STEP PID</a></li>
+              <li class="divider"></li>
+            </ul>
+          </div>
+        </li>
+
+        <li>
+          <a class="collapsible-header">Other<i class="material-icons left">keyboard_arrow_down</i></a>
+          <div class="collapsible-body">
+            <ul>
+              <li><a href="#/sonstige/automatisierung">Automation</a></li>
+              <li><a href="#/sonstige/positioniersysteme">Positioning Systems</a></li>
+              <li><a href="#/sonstige/recycling">Recycling</a></li>
+              <li><a href="#/sonstige/dienstleistungen">Services</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </li>
+
+    <li class="divider"></li>
+    <li class="no-padding dev hidden"><a href="#/sonstige/format"><i class="material-icons" style="font-size: 20px;">code</i>Formattest</a></li>
+  </ul>
+  <!-- End of Sidenav -->
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdn.rawgit.com/showdownjs/showdown/1.8.6/dist/showdown.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+  <script src="../js/materialize.min.js"></script>
+  <script src="../js/navigo.js"></script>
+  <script src="../js/content.js"></script>
+  <script src="../js/init.js"></script>
+
+  <script type="text/javascript">
+    if (Cookies.get("lang") != "de") Cookies.set("lang", "de");
+  </script>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+  <script>
+    window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#0277bdF0",
+          "text": "#ffffff"
+        },
+        "button": {
+          "background": "#039be5",
+          "text": "#ffffff"
+        }
+      },
+      "theme": "edgeless",
+      "position": "top-right",
+      "content": {
+        "message": "This website uses cookies to save the language you selected.",
+        "dismiss": "Accept",
+        "link": "Learn more",
+        "href": "https://cookiesandyou.com/"
+      }
+    })});
+  </script> 
+</body>
+</html>

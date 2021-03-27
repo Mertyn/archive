@@ -1,0 +1,104 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+.icon-block {
+  padding: 0 15px;
+}
+
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+/*
+ * Custom code
+ */
+
+body {
+	display: flex;
+    min-height: 100vh;
+	flex-direction: column;
+}
+
+@media (min-width: 993px) {
+	.wrapper {
+		padding-left: 300px;
+	}
+}
+
+@media print {
+	*:not(#view) {
+		display: none;
+	}
+}
+
+#logo {
+	background: url(../media/img/logo.png);
+	background-size: 100px 48.3333px;
+	width: 100px;
+	height: 48.3333px;
+}
+
+a:focus {
+	outline: none;
+}
+
+/*
+ *	Custom classes
+ */
+
+.center {
+	text-align: center;
+}
+
+.hidden {
+	display: none;
+}
+
+.not-found {
+	margin: 3em 0 10em 0;
+}
+
+.not-found>h1 {
+	font-weight: 100;
+}
+
+#error-view a {
+	margin-bottom: 10px;
+}
+
+/*
+ *	Custom colors
+ */
+
+/*Waves*/
+.waves-effect.waves-blue .waves-ripple {
+	/* The alpha value allows the text and background color
+	of the button to still show through. */
+	background-color: #82b1ff;
+}
+
+#ego:hover {
+	text-decoration: underline;
+}
+
+/*Scrollbar style*/
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #2e98e526;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2e99e499;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2e99e4d1;
+} 

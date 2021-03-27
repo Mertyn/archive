@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Print</title>
+
+	<!-- CSS -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../css/print.css">
+	<link href="../css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+	<!-- Printed view -->
+	<div id="print">
+		<img src="../media/img/logo.png" class="logo">
+		<h1 class="title">Title</h1>
+		<hr>
+	</div>
+
+	<!-- Browser View -->
+	<div id="view">
+		<h1>Print page</h1>
+		<div>
+			<a onclick="window.print()" class="btn light-blue white-text waves-effect waves-light"><i class="material-icons left">print</i>Print</a>
+			<a onclick="window.close()" class="btn light-blue white-text waves-effect waves-light"><i class="material-icons left">close</i>Close</a>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			var title = $(window.opener.document).find("#title").text();
+			document.title = title + " - Print";
+			$(".title").text(title);
+
+			var content = $(window.opener.document).find("#view").clone().contents();
+			$("#print").append(content);
+			window.print();
+		});
+	</script>
+</body>
+</html>

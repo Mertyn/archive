@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Step</title>
+		<meta name="theme-color" content="#1e88e5">
+	</head>
+	<body>
+		<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+		<script src="./js/detect.js"></script>
+		<script>
+			var ua, lang;
+
+			window.onload = function() {
+				lang = Cookies.get("lang");
+				ua = detect.parse(navigator.userAgent).browser;
+
+				if (
+					( ua.family == "IE" )	   ||
+					( ua.family == "Firefox" && ua.major < 8 ) ||
+					( ua.family == "Chrome" && ua.major < 10 ) ||
+					( ua.family == "Opera" && ua.major <= 12 )
+				) {
+					location.href = "http://www.step-sensor.de";
+				} else {
+					if (lang === undefined) {
+						Cookies.set("lang", "de", {expires: 9999});
+						location.href = "de";
+					} else {
+						location.href = lang;
+					}
+				}
+			}
+		</script>
+	</body>
+</html>
